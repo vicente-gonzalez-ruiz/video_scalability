@@ -1,0 +1,71 @@
+\title{Video Scalability}
+\author{Vicente González Ruiz}
+\maketitle
+\tableofcontents
+
+\section{Quality scalability}
+
+\begin{figure}
+  \svg{graphics/quality-scalability}{1000}
+  \caption{Quality scalability.}
+  \label{fig:quality-scalability}
+\end{figure}
+
+Véase la Fig.~\ref{fig:quality-scalability}.
+\begin{itemize}
+\item
+  Ideal for remote visualization environments.
+\item
+  By definition, $V^{[0]}:=V$.
+\end{itemize}
+
+\section{Temporal scalability}
+\begin{figure}
+  \svg{graphics/temporal-scalability}{1000}
+  \caption{Temporal scalability.}
+  \label{fig:temporal-scalability}
+\end{figure}
+
+Véase la Fig.~\ref{fig:temporal-scalability}.
+
+\begin{itemize}
+\item
+  It holds that
+
+  \begin{equation}
+    V^{t}=\{V_{2^t i}\}=\{V_{2i}^{t-1}\},
+  \end{equation}
+
+  where $t$ denotes the Temporal Resolution Level (TRL).
+\item
+  Notice that $V:=V^{0}$.
+\item
+  Useful for fast random access.
+\end{itemize}
+
+%\bibliography{video-compression}
+%\end{document}
+
+\section{\href{http://inst.eecs.berkeley.edu/~ee290t/sp04/lectures/videowavelet_UCB1-3.pdf}{Spatial scalability}}
+
+\begin{figure}
+  \svg{graphics/spatial-scalability}{1000}
+  \caption{Spatial scalability.}
+  \label{fig:spatial-scalability}
+\end{figure}
+
+Véase la Fig.~\ref{fig:spatial-scalability}.
+
+\begin{itemize}
+\item
+  Useful for low-resolution devices.
+\item
+  By definition, $V_i:=V_i^{<0>}$ and $V_i^{<s>}$ has a
+  $\frac{Y}{2^s}\times \frac{X}{2^s}$ resolution, where $X\times Y$
+  is the resolution of $V_i$.
+\end{itemize}
+
+\section{References}
+
+\renewcommand{\addcontentsline}[3]{}% Remove functionality of \addcontentsline
+\bibliography{image_pyramids,DWT,motion_estimation,HEVC,JPEG2000,video_compression}
