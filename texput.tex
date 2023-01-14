@@ -65,6 +65,18 @@ Véase la Fig.~\ref{fig:spatial-scalability}.
   is the resolution of $V_i$.
 \end{itemize}
 
+\section{Spatial multiresolution and motion estimation/compensation}
+
+In the LP domain, it is possible to estimate the motion at high
+resolution levels using the low resolution ones. This can be used
+design a video encoding system in which the motion is estimated by the
+decoder instead of receiving the motion information in the
+code-stream. This can increase the compression ratios (we don't need
+to send the motion data), simplify the RDO (we don't need to consider
+the rate of the motion data), and decouple the encoder and the decoder
+in the algorithm used to estimate the motion (we can use, for example,
+a lower resolution at the decoder).
+
 \section{References}
 
 \renewcommand{\addcontentsline}[3]{}% Remove functionality of \addcontentsline
