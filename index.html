@@ -19,14 +19,15 @@
 
 <h2 class='titleHead'>Video Scalability</h2>
  <div class='author'><span class='ecrm-1200'>Vicente González Ruiz</span></div><br />
-<div class='date'><span class='ecrm-1200'>January 12, 2023</span></div>
+<div class='date'><span class='ecrm-1200'>January 21, 2023</span></div>
    </div>
    <h3 class='likesectionHead' id='contents'><a id='x1-1000'></a>Contents</h3>
    <div class='tableofcontents'>
     <span class='sectionToc'>1 <a href='#quality-scalability' id='QQ2-1-2'>Quality scalability</a></span>
 <br />    <span class='sectionToc'>2 <a href='#temporal-scalability' id='QQ2-1-4'>Temporal scalability</a></span>
 <br />    <span class='sectionToc'>3 <a href='#-httpinsteecsberkeleyedu-eetsplecturesvideowaveletucbpdfspatial-scalability' id='QQ2-1-6'>Spatial scalability</a></span>
-<br />    <span class='sectionToc'>4 <a href='#references' id='QQ2-1-8'>References</a></span>
+<br />    <span class='sectionToc'>4 <a href='#spatial-multiresolution-and-motion-estimationcompensation' id='QQ2-1-8'>Spatial multiresolution and motion estimation/compensation</a></span>
+<br />    <span class='sectionToc'>5 <a href='#references' id='QQ2-1-9'>References</a></span>
    </div>
 <!-- l. 6 --><p class='noindent'>
 </p>
@@ -106,7 +107,18 @@
      <li class='itemize'>Useful for low-resolution devices.
      </li>
      <li class='itemize'>By definition, \(V_i:=V_i^{&lt;0&gt;}\) and \(V_i^{&lt;s&gt;}\) has a \(\frac {Y}{2^s}\times \frac {X}{2^s}\) resolution, where \(X\times Y\) is the resolution of \(V_i\).</li></ul>
-   <h3 class='sectionHead' id='references'><span class='titlemark'>4   </span> <a id='x1-50004'></a>References</h3>
+   <h3 class='sectionHead' id='spatial-multiresolution-and-motion-estimationcompensation'><span class='titlemark'>4   </span> <a id='x1-50004'></a>Spatial multiresolution and motion estimation/compensation</h3>
+<!-- l. 70 --><p class='noindent'>In the LP domain, it is possible to estimate the motion at high resolution levels using
+the low resolution ones. This can be used design a video encoding system in which
+the motion is estimated by the decoder instead of receiving the motion information in
+the code-stream. This can increase the compression ratios (we don’t need to send the
+motion data), simplify the RDO (we don’t need to consider the rate of the motion
+data), and decouple the encoder and the decoder in the algorithm used to
+estimate the motion (we can use, for example, a lower resolution at the
+decoder).
+</p><!-- l. 80 --><p class='noindent'>
+</p>
+   <h3 class='sectionHead' id='references'><span class='titlemark'>5   </span> <a id='x1-60005'></a>References</h3>
     
 </body> 
 </html>

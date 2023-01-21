@@ -107,28 +107,28 @@ TMPs += tempete_000_q1.png
 tempete_000_q2.png:	tempete_352x288x30x420x260.yuv
 	dd if=$< of=1 bs=`echo "352*288*3/2" | bc` count=1 skip=0
 	eyuvtoppm --width 352 --height 288 1 > 2.ppm
-	opj_compress -I -i 2.ppm -o 2.jp2 -r 0.5
-	opj_decompress -i 2.jp2 -o 2.ppm
+	opj_compress -I -i 2.ppm -o tempete_000_q2.jp2 -r 100
+	opj_decompress -i tempete_000_q2.jp2 -o 2.ppm
 	convert 2.ppm $@
-	rm 2.ppm 1 2.jp2
+	rm 2.ppm 1
 TMPs += tempete_000_q2.png
 
 tempete_000_q3.png:	tempete_352x288x30x420x260.yuv
 	dd if=$< of=1 bs=`echo "352*288*3/2" | bc` count=1 skip=0
 	eyuvtoppm --width 352 --height 288 1 > 2.ppm
-	opj_compress -I -i 2.ppm -o 2.jp2 -r 0.1
-	opj_decompress -i 2.jp2 -o 2.ppm
+	opj_compress -I -i 2.ppm -o tempete_000_q3.jp2 -r 200
+	opj_decompress -i tempete_000_q3.jp2 -o 2.ppm
 	convert 2.ppm $@
-	rm 2.ppm 1 2.jp2
+	rm 2.ppm 1
 TMPs += tempete_000_q3.png
 
 tempete_000_q4.png:	tempete_352x288x30x420x260.yuv
 	dd if=$< of=1 bs=`echo "352*288*3/2" | bc` count=1 skip=0
 	eyuvtoppm --width 352 --height 288 1 > 2.ppm
-	opj_compress -I -i 2.ppm -o 2.jp2 -r 0.05
-	opj_decompress -i 2.jp2 -o 2.ppm
+	opj_compress -I -i 2.ppm -o tempete_000_q4.jp2 -r 300
+	opj_decompress -i tempete_000_q4.jp2 -o 2.ppm
 	convert 2.ppm $@
-	rm 2.ppm 1 2.jp2
+	rm 2.ppm 1
 TMPs += tempete_000_q4.png
 
 tempete_001_q1.png:	tempete_352x288x30x420x260.yuv
@@ -142,28 +142,28 @@ TMPs += tempete_001_q1.png
 tempete_001_q2.png:	tempete_352x288x30x420x260.yuv
 	dd if=$< of=1 bs=`echo "352*288*3/2" | bc` count=1 skip=1
 	eyuvtoppm --width 352 --height 288 1 > 2.ppm
-	opj_compress -I -i 2.ppm -o 2.jp2 -r 0.5
-	opj_decompress -i 2.jp2 -o 2.ppm
+	opj_compress -I -i 2.ppm -o tempete_001_q2.jp2 -r 100
+	opj_decompress -i tempete_001_q2.jp2 -o 2.ppm
 	convert 2.ppm $@
-	rm 2.ppm 1 2.jp2
+	rm 2.ppm 1
 TMPs += tempete_001_q2.png
 
 tempete_001_q3.png:	tempete_352x288x30x420x260.yuv
 	dd if=$< of=1 bs=`echo "352*288*3/2" | bc` count=1 skip=1
 	eyuvtoppm --width 352 --height 288 1 > 2.ppm
-	opj_compress -I -i 2.ppm -o 2.jp2 -r 0.1
-	opj_decompress -i 2.jp2 -o 2.ppm
+	opj_compress -I -i 2.ppm -o tempete_001_q3.jp2 -r 200
+	opj_decompress -i tempete_001_q3.jp2 -o 2.ppm
 	convert 2.ppm $@
-	rm 2.ppm 1 2.jp2
+	rm 2.ppm 1
 TMPs += tempete_001_q3.png
 
 tempete_001_q4.png:	tempete_352x288x30x420x260.yuv
 	dd if=$< of=1 bs=`echo "352*288*3/2" | bc` count=1 skip=1
 	eyuvtoppm --width 352 --height 288 1 > 2.ppm
-	opj_compress -I -i 2.ppm -o 2.jp2 -r 0.05
-	opj_decompress -i 2.jp2 -o 2.ppm
+	opj_compress -I -i 2.ppm -o tempete_001_q4.jp2 -r 300
+	opj_decompress -i tempete_001_q4.jp2 -o 2.ppm
 	convert 2.ppm $@
-	rm 2.ppm 1 2.jp2
+	rm 2.ppm 1
 TMPs += tempete_001_q4.png
 
 tempete_002_q1.png:	tempete_352x288x30x420x260.yuv
@@ -177,28 +177,28 @@ TMPs += tempete_002_q1.png
 tempete_002_q2.png:	tempete_352x288x30x420x260.yuv
 	dd if=$< of=1 bs=`echo "352*288*3/2" | bc` count=1 skip=2
 	eyuvtoppm --width 352 --height 288 1 > 2.ppm
-	opj_compress -i 2.ppm -o 2.jp2 -r 0.5
-	opj_decompress -i 2.jp2 -o 2.ppm
+	opj_compress -i 2.ppm -o tempete_002_q2.jp2 -r 100
+	opj_decompress -i tempete_002_q2.jp2 -o 2.ppm
 	convert 2.ppm $@
-	rm 2.ppm 1 2.jp2
+	rm 2.ppm 1
 TMPs += tempete_002_q2.png
 
 tempete_002_q3.png:	tempete_352x288x30x420x260.yuv
 	dd if=$< of=1 bs=`echo "352*288*3/2" | bc` count=1 skip=2
 	eyuvtoppm --width 352 --height 288 1 > 2.ppm
-	opj_compress -I -i 2.ppm -o 2.jp2 -r 0.1
-	opj_decompress -i 2.jp2 -o 2.ppm
+	opj_compress -I -i 2.ppm -o tempete_002_q3.jp2 -r 200
+	opj_decompress -i tempete_002_q3.jp2 -o 2.ppm
 	convert 2.ppm $@
-	rm 2.ppm 1 2.jp2
+	rm 2.ppm 1
 TMPs += tempete_002_q3.png
 
 tempete_002_q4.png:	tempete_352x288x30x420x260.yuv
 	dd if=$< of=1 bs=`echo "352*288*3/2" | bc` count=1 skip=2
 	eyuvtoppm --width 352 --height 288 1 > 2.ppm
-	opj_compress -I -i 2.ppm -o 2.jp2 -r 0.05
-	opj_decompress -i 2.jp2 -o 2.ppm
+	opj_compress -I -i 2.ppm -o tempete_002_q4.jp2 -r 300
+	opj_decompress -i tempete_002_q4.jp2 -o 2.ppm
 	convert 2.ppm $@
-	rm 2.ppm 1 2.jp2
+	rm 2.ppm 1
 TMPs += tempete_002_q4.png
 
 tempete_003_q1.png:	tempete_352x288x30x420x260.yuv
@@ -212,28 +212,28 @@ TMPs += tempete_003_q1.png
 tempete_003_q2.png:	tempete_352x288x30x420x260.yuv
 	dd if=$< of=1 bs=`echo "352*288*3/2" | bc` count=1 skip=3
 	eyuvtoppm --width 352 --height 288 1 > 2.ppm
-	opj_compress -I -i 2.ppm -o 2.jp2 -r 0.5
-	opj_decompress -i 2.jp2 -o 2.ppm
+	opj_compress -I -i 2.ppm -o tempete_003_q2.jp2 -r 100
+	opj_decompress -i tempete_003_q2.jp2 -o 2.ppm
 	convert 2.ppm $@
-	rm 2.ppm 1 2.jp2
+	rm 2.ppm 1
 TMPs += tempete_003_q2.png
 
 tempete_003_q3.png:	tempete_352x288x30x420x260.yuv
 	dd if=$< of=1 bs=`echo "352*288*3/2" | bc` count=1 skip=3
 	eyuvtoppm --width 352 --height 288 1 > 2.ppm
-	opj_compress -I -i 2.ppm -o 2.jp2 -r 0.1
-	opj_decompress -i 2.jp2 -o 2.ppm
+	opj_compress -I -i 2.ppm -o tempete_003_q3.jp2 -r 200
+	opj_decompress -i tempete_003_q3.jp2 -o 2.ppm
 	convert 2.ppm $@
-	rm 2.ppm 1 2.jp2
+	rm 2.ppm 1
 TMPs += tempete_003_q3.png
 
 tempete_003_q4.png:	tempete_352x288x30x420x260.yuv
 	dd if=$< of=1 bs=`echo "352*288*3/2" | bc` count=1 skip=3
 	eyuvtoppm --width 352 --height 288 1 > 2.ppm
-	opj_compress -I -i 2.ppm -o 2.jp2 -r 0.05
-	opj_decompress -i 2.jp2 -o 2.ppm
+	opj_compress -I -i 2.ppm -o tempete_003_q4.jp2 -r 300
+	opj_decompress -i tempete_003_q4.jp2 -o 2.ppm
 	convert 2.ppm $@
-	rm 2.ppm 1 2.jp2
+	rm 2.ppm 1
 TMPs += tempete_003_q4.png
 
 tempete_004_q1.png:	tempete_352x288x30x420x260.yuv
@@ -247,28 +247,28 @@ TMPs += tempete_004_q1.png
 tempete_004_q2.png:	tempete_352x288x30x420x260.yuv
 	dd if=$< of=1 bs=`echo "352*288*3/2" | bc` count=1 skip=4
 	eyuvtoppm --width 352 --height 288 1 > 2.ppm
-	opj_compress -I -i 2.ppm -o 2.jp2 -r 0.5
-	opj_decompress -i 2.jp2 -o 2.ppm
+	opj_compress -I -i 2.ppm -o tempete_004_q2.jp2 -r 100
+	opj_decompress -i tempete_004_q2.jp2 -o 2.ppm
 	convert 2.ppm $@
-	rm 2.ppm 1 2.jp2
+	rm 2.ppm 1
 TMPs += tempete_004_q2.png
 
 tempete_004_q3.png:	tempete_352x288x30x420x260.yuv
 	dd if=$< of=1 bs=`echo "352*288*3/2" | bc` count=1 skip=4
 	eyuvtoppm --width 352 --height 288 1 > 2.ppm
-	opj_compress -i 2.ppm -o 2.jp2 -r 0.1
-	opj_decompress -i 2.jp2 -o 2.ppm
+	opj_compress -i 2.ppm -o tempete_004_q3.jp2 -r 200
+	opj_decompress -i tempete_004_q3.jp2 -o 2.ppm
 	convert 2.ppm $@
-	rm 2.ppm 1 2.jp2
+	rm 2.ppm 1
 TMPs += tempete_004_q3.png
 
 tempete_004_q4.png:	tempete_352x288x30x420x260.yuv
 	dd if=$< of=1 bs=`echo "352*288*3/2" | bc` count=1 skip=4
 	eyuvtoppm --width 352 --height 288 1 > 2.ppm
-	opj_compress -I -i 2.ppm -o 2.jp2 -r 0.05
-	opj_decompress -i 2.jp2 -o 2.ppm
+	opj_compress -I -i 2.ppm -o tempete_004_q4.jp2 -r 300
+	opj_decompress -i tempete_004_q4.jp2 -o 2.ppm
 	convert 2.ppm $@
-	rm 2.ppm 1 2.jp2
+	rm 2.ppm 1
 TMPs += tempete_004_q4.png
 
 tempete_005_q1.png:	tempete_352x288x30x420x260.yuv
@@ -282,28 +282,28 @@ TMPs += tempete_005_q1.png
 tempete_005_q2.png:	tempete_352x288x30x420x260.yuv
 	dd if=$< of=1 bs=`echo "352*288*3/2" | bc` count=1 skip=5
 	eyuvtoppm --width 352 --height 288 1 > 2.ppm
-	opj_compress -I -i 2.ppm -o 2.jp2 -r 0.5
-	opj_decompress -i 2.jp2 -o 2.ppm
+	opj_compress -I -i 2.ppm -o tempete_005_q2.jp2 -r 100
+	opj_decompress -i tempete_005_q2.jp2 -o 2.ppm
 	convert 2.ppm $@
-	rm 2.ppm 1 2.jp2
+	rm 2.ppm 1
 TMPs += tempete_005_q2.png
 
 tempete_005_q3.png:	tempete_352x288x30x420x260.yuv
 	dd if=$< of=1 bs=`echo "352*288*3/2" | bc` count=1 skip=5
 	eyuvtoppm --width 352 --height 288 1 > 2.ppm
-	opj_compress -I -i 2.ppm -o 2.jp2 -r 0.1
-	opj_decompress -i 2.jp2 -o 2.ppm
+	opj_compress -I -i 2.ppm -o tempete_005_q3.jp2 -r 200
+	opj_decompress -i tempete_005_q3.jp2 -o 2.ppm
 	convert 2.ppm $@
-	rm 2.ppm 1 2.jp2
+	rm 2.ppm 1
 TMPs += tempete_005_q3.png
 
 tempete_005_q4.png:	tempete_352x288x30x420x260.yuv
 	dd if=$< of=1 bs=`echo "352*288*3/2" | bc` count=1 skip=5
 	eyuvtoppm --width 352 --height 288 1 > 2.ppm
-	opj_compress -I -i 2.ppm -o 2.jp2 -r 0.05
-	opj_decompress -i 2.jp2 -o 2.ppm
+	opj_compress -I -i 2.ppm -o tempete_005_q4.jp2 -r 300
+	opj_decompress -i tempete_005_q4.jp2 -o 2.ppm
 	convert 2.ppm $@
-	rm 2.ppm 1 2.jp2
+	rm 2.ppm 1
 TMPs += tempete_005_q4.png
 
 tempete_006_q1.png:	tempete_352x288x30x420x260.yuv
@@ -317,28 +317,28 @@ TMPs += tempete_006_q1.png
 tempete_006_q2.png:	tempete_352x288x30x420x260.yuv
 	dd if=$< of=1 bs=`echo "352*288*3/2" | bc` count=1 skip=6
 	eyuvtoppm --width 352 --height 288 1 > 2.ppm
-	opj_compress -I -i 2.ppm -o 2.jp2 -r 0.5
-	opj_decompress -i 2.jp2 -o 2.ppm
+	opj_compress -I -i 2.ppm -o tempete_006_q2.jp2 -r 100
+	opj_decompress -i tempete_006_q2.jp2 -o 2.ppm
 	convert 2.ppm $@
-	rm 2.ppm 1 2.jp2
+	rm 2.ppm 1
 TMPs += tempete_006_q2.png
 
 tempete_006_q3.png:	tempete_352x288x30x420x260.yuv
 	dd if=$< of=1 bs=`echo "352*288*3/2" | bc` count=1 skip=6
 	eyuvtoppm --width 352 --height 288 1 > 2.ppm
-	opj_compress -I -i 2.ppm -o 2.jp2 -r 0.1
-	opj_decompress -i 2.jp2 -o 2.ppm
+	opj_compress -I -i 2.ppm -o tempete_006_q3.jp2 -r 200
+	opj_decompress -i tempete_006_q3.jp2 -o 2.ppm
 	convert 2.ppm $@
-	rm 2.ppm 1 2.jp2
+	rm 2.ppm 1
 TMPs += tempete_006_q3.png
 
 tempete_006_q4.png:	tempete_352x288x30x420x260.yuv
 	dd if=$< of=1 bs=`echo "352*288*3/2" | bc` count=1 skip=6
 	eyuvtoppm --width 352 --height 288 1 > 2.ppm
-	opj_compress -I -i 2.ppm -o 2.jp2 -r 0.05
-	opj_decompress -i 2.jp2 -o 2.ppm
+	opj_compress -I -i 2.ppm -o tempete_006_q4.jp2 -r 300
+	opj_decompress -i tempete_006_q4.jp2 -o 2.ppm
 	convert 2.ppm $@
-	rm 2.ppm 1 2.jp2
+	rm 2.ppm 1
 TMPs += tempete_006_q4.png
 
 tempete_007_q1.png:	tempete_352x288x30x420x260.yuv
@@ -352,28 +352,28 @@ TMPs += tempete_007_q1.png
 tempete_007_q2.png:	tempete_352x288x30x420x260.yuv
 	dd if=$< of=1 bs=`echo "352*288*3/2" | bc` count=1 skip=7
 	eyuvtoppm --width 352 --height 288 1 > 2.ppm
-	opj_compress -I -i 2.ppm -o 2.jp2 -r 0.5
-	opj_decompress -i 2.jp2 -o 2.ppm
+	opj_compress -I -i 2.ppm -o tempete_007_q2.jp2 -r 100
+	opj_decompress -i tempete_007_q2.jp2 -o 2.ppm
 	convert 2.ppm $@
-	rm 2.ppm 1 2.jp2
+	rm 2.ppm 1
 TMPs += tempete_007_q2.png
 
 tempete_007_q3.png:	tempete_352x288x30x420x260.yuv
 	dd if=$< of=1 bs=`echo "352*288*3/2" | bc` count=1 skip=7
 	eyuvtoppm --width 352 --height 288 1 > 2.ppm
-	opj_compress -I -i 2.ppm -o 2.jp2 -r 0.1
-	opj_decompress -i 2.jp2 -o 2.ppm
+	opj_compress -I -i 2.ppm -o tempete_007_q3.jp2 -r 200
+	opj_decompress -i tempete_007_q3.jp2 -o 2.ppm
 	convert 2.ppm $@
-	rm 2.ppm 1 2.jp2
+	rm 2.ppm 1
 TMPs += tempete_007_q3.png
 
 tempete_007_q4.png:	tempete_352x288x30x420x260.yuv
 	dd if=$< of=1 bs=`echo "352*288*3/2" | bc` count=1 skip=7
 	eyuvtoppm --width 352 --height 288 1 > 2.ppm
-	opj_compress -I -i 2.ppm -o 2.jp2 -r 0.05
-	opj_decompress -i 2.jp2 -o 2.ppm
+	opj_compress -I -i 2.ppm -o tempete_007_q4.jp2 -r 300
+	opj_decompress -i tempete_007_q4.jp2 -o 2.ppm
 	convert 2.ppm $@
-	rm 2.ppm 1 2.jp2
+	rm 2.ppm 1
 TMPs += tempete_007_q4.png
 
 tempete_008_q1.png:	tempete_352x288x30x420x260.yuv
@@ -387,28 +387,28 @@ TMPs += tempete_008_q1.png
 tempete_008_q2.png:	tempete_352x288x30x420x260.yuv
 	dd if=$< of=1 bs=`echo "352*288*3/2" | bc` count=1 skip=8
 	eyuvtoppm --width 352 --height 288 1 > 2.ppm
-	opj_compress -I -i 2.ppm -o 2.jp2 -r 0.5
-	opj_decompress -i 2.jp2 -o 2.ppm
+	opj_compress -I -i 2.ppm -o tempete_008_q2.jp2 -r 100
+	opj_decompress -i tempete_008_q2.jp2 -o 2.ppm
 	convert 2.ppm $@
-	rm 2.ppm 1 2.jp2
+	rm 2.ppm 1
 TMPs += tempete_008_q2.png
 
 tempete_008_q3.png:	tempete_352x288x30x420x260.yuv
 	dd if=$< of=1 bs=`echo "352*288*3/2" | bc` count=1 skip=8
 	eyuvtoppm --width 352 --height 288 1 > 2.ppm
-	opj_compress -I -i 2.ppm -o 2.jp2 -r 0.1
-	opj_decompress -i 2.jp2 -o 2.ppm
+	opj_compress -I -i 2.ppm -o tempete_008_q3.jp2 -r 200
+	opj_decompress -i tempete_008_q3.jp2 -o 2.ppm
 	convert 2.ppm $@
-	rm 2.ppm 1 2.jp2
+	rm 2.ppm 1
 TMPs += tempete_008_q3.png
 
 tempete_008_q4.png:	tempete_352x288x30x420x260.yuv
 	dd if=$< of=1 bs=`echo "352*288*3/2" | bc` count=1 skip=8
 	eyuvtoppm --width 352 --height 288 1 > 2.ppm
-	opj_compress -I -i 2.ppm -o 2.jp2 -r 0.05
-	opj_decompress -i 2.jp2 -o 2.ppm
+	opj_compress -I -i 2.ppm -o tempete_008_q4.jp2 -r 300
+	opj_decompress -i tempete_008_q4.jp2 -o 2.ppm
 	convert 2.ppm $@
-	rm 2.ppm 1 2.jp2
+	rm 2.ppm 1
 TMPs += tempete_008_q4.png
 
 quality-scalability.pdf:	quality-scalability.fig \
